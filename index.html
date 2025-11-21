@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encerramento do Ano Letivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- FUNDO ANIMADO -->
+    <div class="floating-circle"></div>
+    <div class="floating-circle two"></div>
+    <div class="floating-circle three"></div>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>Encerramento do Ano Letivo</h1>
+        <p class="subtitle">Redações • Galeria • Mensagens • Agenda • Agradecimentos</p>
+    </header>
+
+    <!-- MENU -->
+    <nav>
+        <ul>
+            <li><a href="#redacoes">Redações</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#mensagens">Mensagens</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#agradecimentos">Agradecimentos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- REDAÇÕES -->
+        <section id="redacoes">
+            <h2>Redações</h2>
+
+            <div class="redacoes-grid">
+
+                <div class="redacao-card">
+                    <h3>Redação 1</h3>
+                    <p>POR QUE OS PROCEDIMENTOS ESTÉTICOS ESTÃO AUMENTANDO ENTRE OS JOVENS?</p>
+                    <button onclick="abrirModal(1)">Ler Redação</button>
+                </div>
+
+                <div class="redacao-card">
+                    <h3>Redação 2</h3>
+                    <p>Texto referente à redação 2...</p>
+                    <button onclick="abrirModal(2)">Ler Redação</button>
+                </div>
+
+                <div class="redacao-card">
+                    <h3>Redação 3</h3>
+                    <p>Texto referente à redação 3...</p>
+                    <button onclick="abrirModal(3)">Ler Redação</button>
+                </div>
+
+                <!-- Continue suas redações até 14 -->
+            </div>
+        </section>
+
+        <!-- MODAL -->
+        <div id="modalRedacao" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="fecharModal()">&times;</span>
+                <h2 id="modal-titulo"></h2>
+                <p id="modal-texto"></p>
+            </div>
+        </div>
+
+        <!-- GALERIA -->
+        <section id="galeria">
+            <h2>Galeria de Fotos</h2>
+            <div class="galeria-grid">
+                <img src="img/foto1.jpg" alt="Foto 1">
+                <img src="img/foto2.jpg" alt="Foto 2">
+                <img src="img/foto3.jpg" alt="Foto 3">
+                <img src="img/foto4.jpg" alt="Foto 4">
+            </div>
+        </section>
+
+        <!-- MENSAGENS -->
+        <section id="mensagens">
+            <h2>Mensagens</h2>
+            <div class="mensagem-box">
+                <p>Obrigado por fazer parte desta jornada. Que o próximo ano seja ainda mais incrível!</p>
+            </div>
+        </section>
+
+        <!-- MINI CALENDÁRIO -->
+        <section id="agenda">
+            <h2>Agenda & Datas Importantes</h2>
+
+            <div class="calendar-box">
+                <h3>Dezembro 2024</h3>
+
+                <div class="calendar-grid">
+                    <div>Dom</div><div>Seg</div><div>Ter</div><div>Qua</div><div>Qui</div><div>Sex</div><div>Sáb</div>
+
+                    <div></div><div></div><div></div><div></div><div>1</div><div>2</div><div>3</div>
+                    <div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div>
+                    <div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div>
+                    <div>18</div>
+                    <div class="evento-end">19</div>
+                    <div>20</div>
+                    <div>21</div>
+                    <div>22</div>
+                    <div>23</div>
+                    <div class="evento-natal">24</div>
+                    <div class="evento-natal">25</div>
+                    <div>26</div>
+                    <div>27</div>
+                    <div>28</div>
+                    <div>29</div>
+                    <div class="evento-ano">30</div>
+                    <div class="evento-ano">31</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AGRADECIMENTOS -->
+        <section id="agradecimentos">
+            <h2>Agradecimentos</h2>
+
+            <div class="agradecimentos-box">
+                <p>
+                    Agradeço a todos que fizeram parte deste ano letivo.  
+                    Aos professores, colegas e amigos que caminharam junto comigo,  
+                    deixo meu carinho e gratidão.
+                </p>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Encerramento do Ano Letivo • 2024 - 2025</p>
+        <div class="footer-decoration"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

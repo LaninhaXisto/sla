@@ -1,0 +1,254 @@
+/* FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Poppins", sans-serif;
+    background:#0d1b2a;
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+/* --- FUNDO ANIMADO --- */
+.floating-circle{
+    position:fixed;
+    width:180px;
+    height:180px;
+    background:#ff897a;
+    opacity:0.15;
+    border-radius:50%;
+    top:5%;
+    left:5%;
+    filter:blur(10px);
+    animation:float 6s infinite alternate ease-in-out;
+}
+
+.floating-circle.two{
+    top:70%;
+    left:70%;
+    background:#1d4ed8;
+    opacity:0.18;
+    animation-delay:1s;
+}
+
+.floating-circle.three{
+    top:50%;
+    left:20%;
+    background:#ff6c5c;
+    opacity:0.15;
+    animation-delay:2s;
+}
+
+@keyframes float{
+    from{ transform:translateY(0); }
+    to{ transform:translateY(-40px); }
+}
+
+/* HEADER */
+header{
+    padding:80px 20px 30px;
+    text-align:center;
+}
+
+h1{
+    font-size:3rem;
+    font-weight:700;
+    color:#ffb3a7;
+}
+
+.subtitle{
+    color:#dbeafe;
+}
+
+/* NAV */
+nav{
+    background:#132237cc;
+    backdrop-filter:blur(8px);
+    padding:10px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    list-style:none;
+}
+
+nav a{
+    color:#ffecec;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff8b7b;
+}
+
+/* SEÇÕES */
+main section{
+    padding:70px 10%;
+}
+
+h2{
+    font-size:2rem;
+    margin-bottom:20px;
+    color:#ffcabf;
+}
+
+/* REDAÇÕES */
+.redacoes-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+    gap:25px;
+}
+
+.redacao-card{
+    background:#162c44;
+    padding:20px;
+    border-radius:12px;
+    border:1px solid #264766;
+    transition:.3s;
+}
+
+.redacao-card:hover{
+    transform:translateY(-5px);
+    border-color:#ff8b7b;
+}
+
+.redacao-card button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:7px;
+    background:#ff8b7b;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    margin-top:10px;
+    transition:.3s;
+}
+
+.redacao-card button:hover{
+    background:#ff6b5a;
+}
+
+/* MODAL */
+.modal{
+    display:none;
+    position:fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background:#000000aa;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    background:#1a2e45;
+    padding:30px;
+    border-radius:12px;
+    max-width:600px;
+    width:90%;
+    border:2px solid #ff8b7b;
+}
+
+.close{
+    float:right;
+    font-size:28px;
+    cursor:pointer;
+    color:#ff8b7b;
+}
+
+/* GALERIA */
+.galeria-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+}
+
+.galeria-grid img{
+    width:100%;
+    border-radius:12px;
+}
+
+/* MENSAGENS */
+.mensagem-box{
+    background:#162c44;
+    padding:30px;
+    border-radius:12px;
+    border:1px solid #264766;
+}
+
+/* CALENDÁRIO */
+.calendar-box{
+    background:#162c44;
+    padding:25px;
+    border-radius:12px;
+    border:1px solid #264766;
+}
+
+.calendar-grid{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    text-align:center;
+    gap:6px;
+    margin-top:15px;
+}
+
+.calendar-grid div{
+    padding:8px;
+    border-radius:6px;
+}
+
+.evento-end{
+    background:#ff8b7b;
+    color:white;
+}
+
+.evento-natal{
+    background:#1d4ed8;
+    color:white;
+}
+
+.evento-ano{
+    background:#ff6b5a;
+    color:white;
+}
+
+/* AGRADECIMENTOS */
+.agradecimentos-box{
+    background:#162c44;
+    padding:30px;
+    border-radius:12px;
+    border:1px solid #264766;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:40px;
+    background:#0b1624;
+    margin-top:40px;
+    position:relative;
+}
+
+.footer-decoration{
+    position:absolute;
+    width:200px;
+    height:70px;
+    background:#ff8b7b;
+    opacity:0.15;
+    border-radius:40px;
+    bottom:10px;
+    left:50%;
+    transform:translateX(-50%);
+}
